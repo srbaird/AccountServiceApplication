@@ -7,6 +7,9 @@ ___
 
 Stand alone application may access the service through a Spring JNDI lookup.
 ```
+	xmlns:jee="http://www.springframework.org/schema/jee"
+	xsi:schemaLocation="http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-3.0.xsd
+
     <jee:remote-slsb id="accountServiceApp" business-interface="com.bac.accountservice.AccountService"
     	jndi-name="java:global/AccountServiceApplication/AccountServiceApp-1.0.0/AccountServiceApp" />
 ```
